@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="game.css">
+        
+    </head>
+    <body id="b">
+        <h1 id="title">Memory Tiles</h1>
+        <div id="leveltab">
+            <div id="lev1" class="levels">Level 1</div>
+            <div id="lev2" class="levels">Level 2</div>
+            <div id="lev3" class="levels">Level 3</div>
+        </div>
+        <div id="game">
+            <p id="l"></p>
+            <div class="row1">
+                <span id="demo" class="col1"></span>
+                <span id="score" class="col1"></span>
+            </div>
+            
+
+            <div class="row">
+                <img class="column" id="card0"src="back.png" height=170 alt="back phase" onclick="play(this.id)" />
+                <img class="column" id="card1"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+                <img class="column" id="card2"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+                <img class="column" id="card3"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+             
+            </div>
+            <div class="row">
+                <img class="column" id="card4"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+                <img class="column" id="card5"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+                <img class="column" id="card6"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+                <img class="column" id="card7"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>                
+            </div>
+            <div class="row">
+                <img class="column" id="card8"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+                <img class="column" id="card9"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+                <img class="column" id="card*"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+                <img class="column" id="card#"src="back.png" height=170 alt="back phase" onclick="play(this.id)"/>
+            </div>
+        </div>
+        <div id="result">
+            <p id="res"></p>
+            <p id="fscore"></p>
+            <p id="exit" onclick="location.reload()">Click to go to levels</p>
+        </div>
+
+        <script src = "game.js"></script>
+        
+    </body>
+</html>
