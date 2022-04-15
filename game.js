@@ -35,8 +35,9 @@ function cardset(card){
     mapval[c1]=mapval[c2]=card;
     var ct=chkval(c1);
     var ct2=chkval(c2);
-    document.getElementById("card"+ct).setAttribute("alt",card);
-    document.getElementById("card"+ct2).setAttribute("alt",card);
+    const url="https://raw.githubusercontent.com/sankave00/Memory-Tiles/master/";
+    document.getElementById("card"+ct).setAttribute("alt",url+card);
+    document.getElementById("card"+ct2).setAttribute("alt",url+card);
 }
 function mainfunc(){
     document.getElementById("leveltab").style.display = "none";
@@ -118,8 +119,8 @@ function play(id)
                 }
                 else
                 {
-                    eve.src="back.png";
-                    document.getElementById("card"+prev).src="back.png";
+                    eve.src="https://raw.githubusercontent.com/sankave00/Memory-Tiles/master/back.png";
+                    document.getElementById("card"+prev).src="https://raw.githubusercontent.com/sankave00/Memory-Tiles/master/back.png";
                 }
               }, 1000);
               
