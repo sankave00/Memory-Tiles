@@ -96,7 +96,7 @@ function play(id)
         if(temp=='#')temp=11;
         if(chk==0)
         {
-            eve.src="./"+eve.alt+".png";
+            eve.src=eve.alt+".png";
             select1=mapval[parseInt(temp)];
             prev=id[4];
             console.log(prev);
@@ -105,7 +105,7 @@ function play(id)
         else
         {
             console.log(prev);
-            eve.src="./"+eve.alt+".png";
+            eve.src=eve.alt+".png";
 
             select2=mapval[parseInt(temp)];
             setTimeout(function() {
